@@ -23,6 +23,13 @@ jobs:
     steps:
     - name: Download an artifact
       uses: actions/download-artifact@v3
-    
+      with: 
+        name: my-artifact
+
+    - name: Extract file
+      run: 7z x service.zip
+
     - name: Display structure of downloaded files
       run: ls -R
+
+    
