@@ -20,6 +20,7 @@ jobs:
     runs-on: windows-latest
     needs: build
 
+    steps:
     - name: Download an artifact
       uses: actions/download-artifact@v3
     
